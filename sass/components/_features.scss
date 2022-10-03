@@ -1,0 +1,41 @@
+.feature {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    &__list {
+        display: flex;
+        padding: 0px;
+        gap: 30px;
+    }
+
+    &__item {
+        width: 270px;
+    }
+
+    &__block {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 30px;
+        width: 270px;
+        height: 120px;
+        background: #F5F4FA;
+        border-radius: 4px;
+    }
+
+    &__targets {
+        margin-top: 0px;
+        margin-bottom: 9.41px;
+        color: var(--section-title-colot);
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+    }
+
+    &__text {
+        margin-top: 0px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.7;
+    }
+}

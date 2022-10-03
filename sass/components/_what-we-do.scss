@@ -1,0 +1,54 @@
+.section-what-we-do {
+    padding-bottom: 94px;
+}
+
+.section__title {
+    margin-bottom: 50px;
+    text-align: center;
+    color: var(--section-title-colot);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+}
+
+.what-we-do {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.section-our-team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    background: #F5F4FA;
+}
+
+.product-thumb {
+    position: relative;
+}
+
+.product-actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 370px;
+    height: 70px;
+    bottom: 0%;
+    opacity: 0;
+    background: rgba(47, 48, 58, 0.8);
+    transition: var(--hover-timing);
+}
+
+.product-text {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: var(--accent-white-color);
+}
+
+.product:hover .product-actions,
+.product:focus .product-actions {
+    opacity: 1;
+}

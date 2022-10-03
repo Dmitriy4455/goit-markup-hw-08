@@ -1,0 +1,29 @@
+.logo__icon {
+    color: var(--accent-color);
+    font-family: Raleway, cursive;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+}
+
+.logo__dark {
+    color: var(--section-title-colot);
+    transition: color var(--hover-timing);
+}
+
+.logo .footer {
+    color: var(--accent-white-color);
+    font-family: Raleway, cursive;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    transition: color var(--hover-timing);
+}
+
+.logo__dark:hover,
+.logo__dark:focus {
+    color: var(--accent-color);
+    transition: var(--hover-timing);
+}
