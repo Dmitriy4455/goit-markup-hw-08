@@ -1,0 +1,60 @@
+.section-title-portfolio {
+    margin-bottom: 4px;
+    color: var(--section-title-colot);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+}
+
+.section-portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.portfolio-nav {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.portfolio-nav .list {
+    margin-bottom: 50px;
+}
+
+.portfolio-text {
+    padding: 20px 26px;
+    border-right: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
+    border-left: 1px solid #EEEEEE;
+}
+.portfolio-buttons {
+    margin-right: 8px;
+}
+
+.portfolio-works {
+    --items: 3;
+}
+
+.portfolio-thumb {
+    position: relative;
+    overflow: hidden;
+}
+
+.portfolio-actions {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(100%);
+
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px;
+    background: rgba(33, 150, 243, 0.9);
+
+    transition-duration: 250ms;
+}
