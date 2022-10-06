@@ -21,83 +21,8 @@
   <body>
     <header class="header">
       <div class="container">
-          <div class="header__mobile">
-          <a class="logo" href="./index.html" class="logo__icon"
-            >Web<span class="logo__dark">Studio</span></a
-          >
-          <button
-            class="menu-toggle js-open-menu button__mobile"
-            aria-expanded="false"
-            aria-controls="mobile-menu"
-            type="button">
-            <svg class="mobile__icon" width="40" height="40">
-              <use href="./images/icons.svg#icon-menu_40px"></use>
-            </svg>
-          </button>
-       
-
-        <div class="menu-container js-menu-container" id="mobile-menu">
-          <button class="menu-toggle js-close-menu button__mobile">
-            <svg class="mobile__icon" width="40" height="40">
-              <use href="./images/icons.svg#icon-Vector"></use>
-            </svg>
-          </button>
-
-          <div style="height: 100%; display: flex; flex-direction: column">
-            <ul class="mobile-menu">
-              <li class="menu__item">
-                <a class="menu__link" href="./index.html">Studio</a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__link" href="./portfolio.html">Portfolio</a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__link" href="">Contacts</a>
-              </li>
-            </ul>
-
-            <ul class="mobile-menu menu__contacts">
-              <li class="menu__item--contacts">
-                <a class="menu__link menu__link--contacts" href="tel:+4402012345678"
-                  >(44)02012345678</a
-                >
-              </li>
-              <li class="menu__item--contacts">
-                <a class="menu__link menu__link--contacts--email" href="mailto:info@webstudio.co.uk"
-                  >info@webstudio.co.uk</a
-                >
-              </li>
-            </ul>
-
-            <ul class="mobile-menu menu__socials">
-              <li class="menu__item--socials">
-                <a class="menu__link menu__link--socials" href="">Instagram</a>
-              </li>
-              <li class="menu__item--socials">
-                <a class="menu__link menu__link--socials" href="">Twitter</a>
-              </li>
-              <li class="menu__item--socials">
-                <a class="menu__link menu__link--socials" href="">Facebook</a>
-              </li>
-              <li class="menu__item--socials">
-                <a class="menu__link menu__link--socials" href="">LinkedIn</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-       </div>
-        
-       <script
-       defer
-       src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-       integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-       crossorigin="anonymous"
-     ></script>
-     <script defer src="js/mobile-menu.js"></script>
-
-     <div class="header__tablet">
-      <nav class="nav header__nav">
-        <a class="logo" href="./index.html" class="logo__icon"
+        <nav class="logo continer header__nav">
+          <a href="./index.html" class="logo__icon"
             >Web<span class="logo__dark">Studio</span></a
           >
           <ul class="nav list">
@@ -129,7 +54,6 @@
           </li>
         </ul>
       </div>
-       </div>
     </header>
     <main>
       <section class="hero">
