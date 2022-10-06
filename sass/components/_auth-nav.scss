@@ -1,6 +1,9 @@
 .auth-nav {
     display: flex;
     margin-left: auto;
+    @media screen and (max-width: 480px) {
+        display: none;
+      }
     &__icon {
         margin-right: 10px;
         fill: currentColor;
