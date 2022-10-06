@@ -196,7 +196,7 @@ img {
       -ms-flex-align: center;
           align-items: center;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .header__nav {
     display: none;
   }
@@ -262,7 +262,7 @@ img {
   display: flex;
   margin-left: auto;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .auth-nav {
     display: none;
   }
