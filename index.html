@@ -582,16 +582,51 @@
     <div? class="menu-container js-menu-container" id="mobile-menu">
       <button class="menu-toggle js-close-menu">
         <svg width="40" height="40">
-          <use href="./images/icons.svg#icon-menu"></use>
+          <use href="./images/icons.svg#icon-cross"></use>
         </svg>
       </button>
 
-      <ul class="mobile-menu">
-        <li><a href="" class="link">About</a></li>
-        <li><a href="" class="link">Products</a></li>
-        <li><a href="" class="link">Contacts</a></li>
-        <li><a href="" class="link">Career</a></li>
-      </ul>
+      <div style="height: 100%; display: flex; flex-direction: column">
+        <ul class="mobile-menu list">
+          <li class="menu__item">
+            <a class="menu__link link" href="./index.html">Studio</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link link" href="./portfolio.html">Portfolio</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link link" href="">Contacts</a>
+          </li>
+        </ul>
+
+        <ul class="mobile-menu list menu__contacts">
+          <li class="menu__item--contacts">
+            <a class="menu__link link menu__link--contacts" href="tel:+(44)02012345678"
+              >02012345678</a
+            >
+          </li>
+          <li class="menu__item--contacts">
+            <a class="menu__link link menu__link--contacts--email" href="mailto:info@webstudio.co.uk"
+              >info@webstudio.co.uk</a
+            >
+          </li>
+        </ul>
+
+        <ul class="mobile-menu list menu__socials">
+          <li class="menu__item--socials">
+            <a class="menu__link link menu__link--socials" href="">Instagram</a>
+          </li>
+          <li class="menu__item--socials">
+            <a class="menu__link link menu__link--socials" href="">Twitter</a>
+          </li>
+          <li class="menu__item--socials">
+            <a class="menu__link link menu__link--socials" href="">Facebook</a>
+          </li>
+          <li class="menu__item--socials">
+            <a class="menu__link link menu__link--socials" href="">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
 
