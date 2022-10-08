@@ -1,7 +1,11 @@
 .nav {
     display: flex;
-    margin-left: 93px;
+    margin-left: 80px;
     align-self: center;
+
+    @media screen and (min-width: 1200px) {
+        margin-left: 93px;
+    }
     &__item:not(:last-child) {
         margin-right: 50px;
     }

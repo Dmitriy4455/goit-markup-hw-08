@@ -1,9 +1,23 @@
 .auth-nav {
     display: flex;
-    margin-left: auto;
-    @media screen and (max-width: 768px) {
-        display: none;
-      }
+  margin-left: auto;
+  flex-direction: column;
+  align-items: flex-start;
+
+  gap: 10px;
+
+  padding-top: 21px;
+  padding-bottom: 21px;
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+    gap: 30px;
+    padding: 0;
+  }
     &__icon {
         margin-right: 10px;
         fill: currentColor;
@@ -20,7 +34,10 @@
     }
 
     &__item+.auth-nav__item {
+       margin-left: 0;
+       @media screen and (min-width: 1200px) {
         margin-left: 50px;
+       } 
     }
 
     &__link:hover,

@@ -20,14 +20,12 @@
   </head>
   <body>
     <header class="header">
-      <div class="container">
-        <nav class="logo continer header__nav">
-      <div class="header__mobile">
-          <a href="./index.html" class="logo__icon"
-            >Web<span class="logo__dark">Studio</span></a
-          >
+      <div class="container" >
+        <a href="./index.html" class="logo__icon"
+            >Web<span class="logo__dark">Studio</span></a>
+        <nav class="logo continer header__nav">  
+      <div class="header__mobile">  
        </div> 
-         
           <ul class="nav list">
             <li class="nav__item">
               <a href="./index.html" class="nav__link current">Studio</a>
@@ -42,14 +40,14 @@
         </nav>
         <ul class="auth-nav list">
           <li class="auth-nav__item">
-            <a class="auth-nav__link" href="mailto:info@webstudio.co.uk"
+            <a class="auth-nav__link link" href="mailto:info@webstudio.co.uk"
               ><svg class="auth-nav__icon" width="16" height="12">
                 <use href="./images/icons.svg#icon-envelope"></use></svg
               >info@webstudio.co.uk</a
             >
           </li>
           <li class="auth-nav__item">
-            <a class="auth-nav__link" href="tel:+4402012345678">
+            <a class="auth-nav__link link" href="tel:+4402012345678">
               <svg class="auth-nav__icon" width="10" height="16">
                 <use href="./images/icons.svg#icon-smartphone"></use></svg
               >(44)02012345678</a
@@ -159,7 +157,7 @@
           <h2 class="section__title">Our team</h2>
           <ul class="our-team list">
             <li class="flex-element shadows">
-              <img
+              <img class="team__picture"
                 src="./images/Tony.jpg"
                 alt="Tony Iommy"
                 width="270"
@@ -225,7 +223,7 @@
               </div>
             </li>
             <li class="flex-element shadows">
-              <img
+              <img class="team__picture"
                 src="./images/Sharon.jpg"
                 alt="Sharon den Adel"
                 width="270"
@@ -291,7 +289,7 @@
               </div>
             </li>
             <li class="flex-element shadows">
-              <img
+              <img class="team__picture"
                 src="./images/James.jpg"
                 alt="James Hetfield"
                 width="270"
@@ -357,7 +355,7 @@
               </div>
             </li>
             <li class="flex-element shadows">
-              <img
+              <img class="team__picture"
                 src="./images/Kirk.jpg"
                 alt="Kirk Hammett"
                 width="270"
@@ -719,8 +717,7 @@
                 <span class="registeer-form-desc"
                   >I agree with the newsletter and accept
                   <a class="register-form-link" target="_blank" href=""
-                    >the Terms and Conditions</a
-                  >
+                    >the Terms and Conditions</a>
                 </span>
               </label>
             </div>
@@ -730,6 +727,7 @@
           </div>
         </form>
       </div>
+    </div>
 
     <!-- Modal -->
     <script src="./js/modal.js"></script>

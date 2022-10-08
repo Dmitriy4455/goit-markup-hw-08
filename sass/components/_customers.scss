@@ -33,6 +33,8 @@
   }
 }
 .customer__item {
+  width: 170px;
+    height: 92px;
     flex-basis: calc((100% - 30px) / 2);
   
     @media screen and (min-width: 768px) {
@@ -44,8 +46,8 @@
     align-items: center;
     justify-content: center;
     padding: 0px;
-    width: 170px;
-    height: 92px;
+    width: 100%;
+    height: 100%;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
     transition: border var(--hover-timing);
