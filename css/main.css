@@ -32,6 +32,8 @@ p {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .visually-hidden {
@@ -274,8 +276,6 @@ img {
       -ms-flex-align: start;
           align-items: flex-start;
   gap: 10px;
-  padding-top: 21px;
-  padding-bottom: 21px;
 }
 @media screen and (max-width: 768px) {
   .auth-nav {

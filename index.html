@@ -157,11 +157,21 @@
           <h2 class="section__title">Our team</h2>
           <ul class="our-team list">
             <li class="flex-element shadows">
-              <img class="team__picture"
-                src="./images/Tony.jpg"
+              <!-- <img class="team__picture"
+              <!-- srcset="./images/Adaptive Graphics/Team/img1_sm-@x1.jpg 1x, ./images/Adaptive Graphics/Team/img1_sm-@x2.jpg 2x"
+                src="./images/Adaptive Graphics/Team/img1_sm-@x1.jpg"
+                alt="Tony Iommy" -->
+
+               <img class="team__picture"
+              srcset="./images/Adaptive Graphics/Team/img1_sm-@x1.jpg 450w
+              ./images/Adaptive Graphics/Team/img1_sm-@x2.jpg 900w
+              ./images/Adaptive Graphics/Team/img1_md-@x1.jpg 354w
+              ./images/Adaptive Graphics/Team/img1_md-@x2.jpg 708w
+              ./images/Adaptive Graphics/Team/img1_lg-@x1.jpg 270w
+              ./images/Adaptive Graphics/Team/img1_lg-@x2.jpg 540w"
+              sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                src="./images/Adaptive Graphics/Team/img1_sm-@x1.jpg"
                 alt="Tony Iommy"
-                width="270"
-                height="260"
               />
               <div class="our-team-names">
                 <h3 class="section-title-team">Christopher Walker</h3>
@@ -224,10 +234,15 @@
             </li>
             <li class="flex-element shadows">
               <img class="team__picture"
-                src="./images/Sharon.jpg"
-                alt="Sharon den Adel"
-                width="270"
-                height="260"
+              srcset="./images/Adaptive Graphics/Team/img2_sm-@x1.jpg 450w
+              ./images/Adaptive Graphics/Team/img2_sm-@x2.jpg 900w
+              ./images/Adaptive Graphics/Team/img2_md-@x1.jpg 354w
+              ./images/Adaptive Graphics/Team/img2_md-@x2.jpg 708w
+              ./images/Adaptive Graphics/Team/img2_lg-@x1.jpg 270w
+              ./images/Adaptive Graphics/Team/img2_lg-@x2.jpg 540w"
+              sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                src="./images/Adaptive Graphics/Team/img2_sm-@1x.jpg"
+                alt="Kylie Evans"
               />
               <div class="our-team-names">
                 <h3 class="section-title-team">Kylie Evans</h3>
@@ -290,10 +305,15 @@
             </li>
             <li class="flex-element shadows">
               <img class="team__picture"
-                src="./images/James.jpg"
+              srcset="./images/Adaptive Graphics/Team/img3_sm-@x1.jpg 450w
+              ./images/Adaptive Graphics/Team/img3_sm-@x2.jpg 900w
+              ./images/Adaptive Graphics/Team/img3_md-@x1.jpg 354w
+              ./images/Adaptive Graphics/Team/img3_md-@x2.jpg 708w
+              ./images/Adaptive Graphics/Team/img3_lg-@x1.jpg 270w
+              ./images/Adaptive Graphics/Team/img3_lg-@x2.jpg 540w"
+              sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                src="./images/Adaptive Graphics/Team/img3_sm-@1x.jpg"
                 alt="James Hetfield"
-                width="270"
-                height="260"
               />
               <div class="our-team-names">
                 <h3 class="section-title-team">Ryan Harris</h3>
@@ -356,10 +376,15 @@
             </li>
             <li class="flex-element shadows">
               <img class="team__picture"
-                src="./images/Kirk.jpg"
+              srcset="./images/Adaptive Graphics/Team/img4_sm-@x1.jpg 450w
+              ./images/Adaptive Graphics/Team/img4_sm-@x2.jpg 900w
+              ./images/Adaptive Graphics/Team/img4_md-@x1.jpg 354w
+              ./images/Adaptive Graphics/Team/img4_md-@x2.jpg 708w
+              ./images/Adaptive Graphics/Team/img4_lg-@x1.jpg 270w
+              ./images/Adaptive Graphics/Team/img4_lg-@x2.jpg 540w"
+              sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                src="./images/Adaptive Graphics/Team/img4_sm-@1x.jpg"
                 alt="Kirk Hammett"
-                width="270"
-                height="260"
               />
               <div class="our-team-names">
                 <h3 class="section-title-team">Tyler Moore</h3>
@@ -576,8 +601,111 @@
       </div>
     </footer>
 
+      <!--Modal-->
+      <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+          <button class="modal-button" type="button" data-modal-close>
+            <svg width="11" height="11">
+              <use href="./images/icons.svg#icon-Vector"></use>
+            </svg>
+          </button>
+  
+          <form class="register-form" name="register-form">
+            <strong class="register-form-title"
+              >Leave your information and we'll call you back
+            </strong>
+  
+            <div class="register-form-group" role="group">
+              <label class="register-form-field">
+                <span class="register-form-label">Name</span>
+                <span class="register-form-span">
+                  <input
+                    class="register-form-input"
+                    type="text"
+                    name="user-name"
+                    required
+                  />
+                  <svg class="register-form-icon" width="12" height="12">
+                    <use href="./images/icons.svg#icon-name"></use>
+                  </svg>
+                </span>
+              </label>
+              <label class="register-form-field">
+                <span class="register-form-label">Telephone</span>
+                <span class="register-form-span">
+                  <input
+                    class="register-form-input"
+                    type="text"
+                    name="user-phone"
+                    required
+                    minlength="13"
+                    maxlength="13"
+                  />
+                  <svg class="register-form-icon" width="13" height="13">
+                    <use href="./images/icons.svg#icon-telephone"></use>
+                  </svg>
+                </span>
+              </label>
+              <label class="register-form-field">
+                <span class="register-form-label">E-mail</span>
+                <span class="register-form-span">
+                  <input
+                    class="register-form-input"
+                    type="email"
+                    name="user-email"
+                    required
+                  />
+                  <svg class="register-form-icon" width="15" height="12">
+                    <use href="./images/icons.svg#icon-email"></use>
+                  </svg>
+                </span>
+              </label>
+              <label class="register-form-field">
+                <span class="register-form-label">Comments</span>
+                <textarea
+                  class="register-form-message"
+                  name="user-message"
+                  rows="5"
+                  placeholder="Enter the text"
+                ></textarea>
+              </label>
+            </div>
+            <div>
+              <div>
+                <label class="register-form-agriment">
+                  <input
+                    class="register-form-checkbox visually-hidden"
+                    type="checkbox"
+                  />
+                  <svg class="register-form-icon agree" width="18" height="15">
+                    <use
+                      class="icon-checked"
+                      href="./images/icons.svg#icon-agree"
+                    ></use>
+                    <use
+                      class="icon-unchecked"
+                      href="./images/icons.svg#icon-non-agree"
+                    ></use>
+                  </svg>
+                  <span class="registeer-form-desc"
+                    >I agree with the newsletter and accept
+                    <a class="register-form-link" target="_blank" href=""
+                      >the Terms and Conditions</a>
+                  </span>
+                </label>
+              </div>
+              <button class="register-form-button button" type="submit">
+                Send
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+      
+      <script src="./js/modal.js"></script>
+
     <!-- Menu -->
-    <div? class="menu-container js-menu-container" id="mobile-menu">
+    <div class="menu-container js-menu-container" id="mobile-menu">
       <button class="menu-toggle js-close-menu">
         <svg width="40" height="40">
           <use href="./images/icons.svg#icon-cross"></use>
@@ -628,110 +756,6 @@
     </div>
   </div>
 
-  <!--Modal-->
-    <div class="backdrop is-hidden" data-modal>
-      <div class="modal">
-        <button class="modal-button" type="button" data-modal-close>
-          <svg width="11" height="11">
-            <use href="./images/icons.svg#icon-Vector"></use>
-          </svg>
-        </button>
-
-        <form class="register-form" name="register-form">
-          <strong class="register-form-title"
-            >Leave your information and we'll call you back
-          </strong>
-
-          <div class="register-form-group" role="group">
-            <label class="register-form-field">
-              <span class="register-form-label">Name</span>
-              <span class="register-form-span">
-                <input
-                  class="register-form-input"
-                  type="text"
-                  name="user-name"
-                  required
-                />
-                <svg class="register-form-icon" width="12" height="12">
-                  <use href="./images/icons.svg#icon-name"></use>
-                </svg>
-              </span>
-            </label>
-            <label class="register-form-field">
-              <span class="register-form-label">Telephone</span>
-              <span class="register-form-span">
-                <input
-                  class="register-form-input"
-                  type="text"
-                  name="user-phone"
-                  required
-                  minlength="13"
-                  maxlength="13"
-                />
-                <svg class="register-form-icon" width="13" height="13">
-                  <use href="./images/icons.svg#icon-telephone"></use>
-                </svg>
-              </span>
-            </label>
-            <label class="register-form-field">
-              <span class="register-form-label">E-mail</span>
-              <span class="register-form-span">
-                <input
-                  class="register-form-input"
-                  type="email"
-                  name="user-email"
-                  required
-                />
-                <svg class="register-form-icon" width="15" height="12">
-                  <use href="./images/icons.svg#icon-email"></use>
-                </svg>
-              </span>
-            </label>
-            <label class="register-form-field">
-              <span class="register-form-label">Comments</span>
-              <textarea
-                class="register-form-message"
-                name="user-message"
-                rows="5"
-                placeholder="Enter the text"
-              ></textarea>
-            </label>
-          </div>
-          <div>
-            <div>
-              <label class="register-form-agriment">
-                <input
-                  class="register-form-checkbox visually-hidden"
-                  type="checkbox"
-                />
-                <svg class="register-form-icon agree" width="18" height="15">
-                  <use
-                    class="icon-checked"
-                    href="./images/icons.svg#icon-agree"
-                  ></use>
-                  <use
-                    class="icon-unchecked"
-                    href="./images/icons.svg#icon-non-agree"
-                  ></use>
-                </svg>
-                <span class="registeer-form-desc"
-                  >I agree with the newsletter and accept
-                  <a class="register-form-link" target="_blank" href=""
-                    >the Terms and Conditions</a>
-                </span>
-              </label>
-            </div>
-            <button class="register-form-button button" type="submit">
-              Send
-            </button>
-          </div>
-        </form>
-      </div>
-    </div>
-
-    <!-- Modal -->
-    <script src="./js/modal.js"></script>
-    <!-- Menu -->
     <script
     defer
     src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
