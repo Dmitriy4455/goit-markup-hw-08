@@ -65,6 +65,7 @@
     font-size: 14px;
     line-height: 1.7;
     text-decoration: none;
+    text-align: left;
 }
 
 .footer address {
@@ -121,6 +122,9 @@
 
 .footer-socials-icon {
     fill: var(--accent-white-color);
+}
+.subscription {
+    width: 100%;
 }
 .subscription p {
     text-align: center;
